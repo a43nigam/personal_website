@@ -73,7 +73,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img src="/jd.png" alt="John Deere" className="w-6 h-6 mr-2" />
-                <h3 className="text-sm">John Deere - SWE Intern</h3>
+                <h3 className="text-sm text-black">John Deere - SWE Intern</h3>
               </div>
               {expandedWorkIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
                   alt="Cornell University"
                   className="w-6 h-6 mr-2"
                 />
-                <h3 className="text-sm">
+                <h3 className="text-sm text-black">
                   Cornell University - Undergraduate Researcher
                 </h3>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
                   alt="Johns Hopkins"
                   className="w-6 h-6 mr-2"
                 />
-                <h3 className="text-sm">
+                <h3 className="text-sm text-black">
                   Johns Hopkins - Machine Learning Researcher
                 </h3>
               </div>
@@ -150,14 +150,14 @@ export default function Home() {
         </section>
 
         <section className="bg-white py-6">
-          <h2 className="text-md font-semibold mb-4">Graveyard</h2>
+          <h2 className="text-md font-semibold mb-4 text-black">Graveyard</h2>
           <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
               onClick={() => handleStartupItemClick(0)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm">Gekko (2024)</h3>
+                <h3 className="text-sm text-black">Gekko (2024)</h3>
               </div>
               {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
@@ -186,7 +186,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(1)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm ">TaskRaise (2023-2024)</h3>
+                <h3 className="text-sm text-black">TaskRaise (2023-2024)</h3>
               </div>
               {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
@@ -218,7 +218,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(2)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm">MathRanks (2022-2023)</h3>
+                <h3 className="text-sm text-black">MathRanks (2022-2023)</h3>
               </div>
               {expandedStartupIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
