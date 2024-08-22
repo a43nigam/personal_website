@@ -206,8 +206,9 @@ export default function Home() {
                   <br />
                   Learning:{" "}
                   <span className="font-semibold">
-                    Understand and plan the "how" of your product early. Think
-                    deeply about what to emphasize and what could be an issue.
+                    Understand and plan the &quot;how&quot; of your product
+                    early. Think deeply about what to emphasize and what could
+                    be an issue.
                   </span>
                 </p>
               </div>
