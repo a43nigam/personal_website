@@ -54,14 +54,11 @@ export default function Home() {
             I pursue exciting and impactful things.
             <br />
             <br /> I am currently building Fermata, a tool to red team vision
-            models.
+            models using AI agents.
             <br />
-            <br />
-            In elementary school I had a love for making YouTube videos. The act
-            of creation was fun to me and was where my love for creating I built
-            my first robot in middle school, since then I have always been
-            obsessed with the marrying hardware and computers to make cool
-            things. In the past, I have built computer vision systems for
+            <br />I built my first robot in middle school, since then I have
+            always been obsessed with the crossover between hardware and
+            computers. In the past, I have built computer vision systems for
             melanoma diagnosis and currently work on vision systems at John
             Deere for autonomy and automation.
           </p>
@@ -117,7 +114,10 @@ export default function Home() {
                   </span>{" "}
                   Worked tons on program architecture and optimization. Created
                   modular systems that are easy to understand. (
-                  <a href="https://github.com/a3yu/causal_inference">
+                  <a
+                    href="https://github.com/a3yu/causal_inference"
+                    className="text-blue-500"
+                  >
                     https://github.com/a3yu/causal_inference
                   </a>
                   ).
