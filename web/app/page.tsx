@@ -53,12 +53,15 @@ export default function Home() {
           <p className="text-gray-600 text-sm">
             I pursue exciting and impactful things.
             <br />
-            <br /> I am currently building Fermata, a tool to analyze dataset
-            quality.
+            <br /> I am currently building Fermata, a tool to red team vision
+            models.
             <br />
-            <br />I built my first robot in middle school, since then I have
-            always been obsessed with the crossover between hardware and
-            computers. In the past, I have built computer vision systems for
+            <br />
+            In elementary school I had a love for making YouTube videos. The act
+            of creation was fun to me and was where my love for creating I built
+            my first robot in middle school, since then I have always been
+            obsessed with the marrying hardware and computers to make cool
+            things. In the past, I have built computer vision systems for
             melanoma diagnosis and currently work on vision systems at John
             Deere for autonomy and automation.
           </p>
@@ -83,9 +86,9 @@ export default function Home() {
                   <span className="font-semibold">
                     Perception systems for automation and autonomy.
                   </span>{" "}
-                  Worked on making ML models for multispectral perception
-                  systems. Worked on really interesting projects, super sharp
-                  peers, and overall a great time.
+                  Worked on making ML models for perception systems. I worked
+                  primarily on crop analysis, safety, and classification models
+                  for weeds.
                 </p>
               </div>
             )}
@@ -112,9 +115,12 @@ export default function Home() {
                     Modular tools for researchers to run causal inference
                     experiments better.
                   </span>{" "}
-                  Making intuitive tools for non-programmers to use is an
-                  interesting design challenge. This job really changed how I
-                  approach architecting systems.
+                  Worked tons on program architecture and optimization. Created
+                  modular systems that are easy to understand. (
+                  <a href="https://github.com/a3yu/causal_inference">
+                    https://github.com/a3yu/causal_inference
+                  </a>
+                  ).
                 </p>
               </div>
             )}
@@ -141,8 +147,8 @@ export default function Home() {
                     Low cost computer vision system that diagnoses malignant
                     skin lesions.
                   </span>{" "}
-                  This was apart of my high school ISEF project. This is where
-                  my interest for computer vision was birthed.
+                  This was apart of my high school ISEF project. First intro to
+                  ML.
                 </p>
               </div>
             )}
@@ -177,10 +183,7 @@ export default function Home() {
                   wasn&apos;t something schools were willing to adopt. <br />
                   <br />
                   Learning:{" "}
-                  <span className="font-semibold">
-                    Be more in tune with customer base. Talk with them early and
-                    understand their values.
-                  </span>
+                  <span className="font-semibold">Talk with customers.</span>
                 </p>
               </div>
             )}
@@ -210,8 +213,7 @@ export default function Home() {
                   Learning:{" "}
                   <span className="font-semibold">
                     Understand and plan the &quot;how&quot; of your product
-                    early. Think deeply about what to emphasize and what could
-                    be an issue.
+                    early.
                   </span>
                 </p>
               </div>
@@ -238,7 +240,7 @@ export default function Home() {
                   <br />
                   Learning:{" "}
                   <span className="font-semibold">
-                    Baptism by fire is a great way to learn. Learn by doing.
+                    Baptism by fire is a great way to learn.
                   </span>
                 </p>
               </div>
