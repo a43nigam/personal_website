@@ -40,11 +40,11 @@ export default function Home() {
               >
                 <FaLinkedin className="text-gray-600" />
               </a>
-{/*               <a
+              <a
                 href="https://github.com/a3yu"
                 className="mx-2 hover:text-gray-400 border-gray-200 border rounded p-1"
               >
-                <FaGithub className="text-gray-600" /> */}
+                <FaGithub className="text-gray-600" />
               </a>
             </nav>
           </div>
