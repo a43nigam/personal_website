@@ -62,8 +62,8 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="bg-white py-6  border-gray-200">
-          <h2 className="text-md font-semibold mb-4">Work</h2>
+{/*         <section className="bg-white py-6  border-gray-200">
+          <h2 className="text-md font-semibold mb-4">School</h2>
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
               onClick={() => handleWorkItemClick(0)}
@@ -84,7 +84,7 @@ export default function Home() {
                 </p>
               </div>
             )}
-        </section>
+        </section> */}
 
         <section className="bg-white py-6  border-gray-200">
           <h2 className="text-md font-semibold mb-4">Work</h2>
@@ -115,7 +115,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img
-                  src="/af.png"
+                  src="/af.jpg"
                   alt="Space Force"
                   className="w-6 h-6 mr-2"
                 />
