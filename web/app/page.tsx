@@ -144,6 +144,88 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-white py-6  border-gray-200">
+          <h2 className="text-md font-semibold mb-4">Work</h2>
+          <div className="space-y-2">
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleWorkItemClick(0)}
+            >
+              <div className="flex items-center">
+                <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
+                <h3 className="text-sm text-black">Cornell - Undergrad Researcher</h3>
+              </div>
+              {expandedWorkIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedWorkIndex === 0 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  <span className="font-semibold">
+                    Studying superconducting superlattices
+                  </span>{" "}
+                  Work in Yasuda Lab to use van der Waals materials to fabricate/study low dimensional heterostructures - 
+                  these have applications in non-volatile memory and quantum information science. See projects for more info.
+                </p>
+              </div>
+            )}
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleWorkItemClick(1)}
+            >
+              <div className="flex items-center">
+                <img
+                  src="/af.png"
+                  alt="Space Force"
+                  className="w-6 h-6 mr-2"
+                />
+                <h3 className="text-sm text-black">
+                  Air Force Research Lab - Research Intern (DoD Secret)
+                </h3>
+              </div>
+              {expandedWorkIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedWorkIndex === 1 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  <span className="font-semibold">
+                    Ionospheric plasma physics / Materials development
+                  </span>{" "}
+                  Experimentally modelled ionospheric plasma behavior. Explored novel processes to 
+                  develop materials relevant to the Space Force.
+                  ).
+                </p>
+              </div>
+            )}
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleWorkItemClick(2)}
+            >
+              <div className="flex items-center">
+                <img
+                  src="/hyperloop.png"
+                  alt="Hyperloop"
+                  className="w-6 h-6 mr-2"
+                />
+                <h3 className="text-sm text-black">
+                  Cornell Hyperloop - Mechanical Engineer
+                </h3>
+              </div>
+              {expandedWorkIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedWorkIndex === 2 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  <span className="font-semibold">
+                    Magnetic thrust and levitation
+                  </span>{" "}
+                  Worked with the team to design, engineer, and implement a linear induction motor in our pod.
+                  Currently working to engineer maglev.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
         <section className="bg-white py-6">
           <span className="flex space-x-2 items-center mb-4">
             <h2 className="text-md font-semibold text-black">Past Projects</h2>
