@@ -29,22 +29,22 @@ export default function Home() {
             <h1 className="text-3xl font-bold">Aedin Yu</h1>
             <nav className="mt-4 flex">
               <a
-                href="mailto:aedinyu05@gmail.com"
+                href="mailto:a43nigam@gmail.com"
                 className="mr-2 hover:text-gray-400 border-gray-200 border rounded p-1"
               >
                 <CiMail className="text-gray-600" />
               </a>
               <a
-                href="https://www.linkedin.com/in/aedin-yu/"
+                href="https://www.linkedin.com/in/anubhav-nigam/"
                 className="mx-2 hover:text-gray-400 border-gray-200 border rounded p-1"
               >
                 <FaLinkedin className="text-gray-600" />
               </a>
-              <a
+{/*               <a
                 href="https://github.com/a3yu"
                 className="mx-2 hover:text-gray-400 border-gray-200 border rounded p-1"
               >
-                <FaGithub className="text-gray-600" />
+                <FaGithub className="text-gray-600" /> */}
               </a>
             </nav>
           </div>
@@ -57,6 +57,7 @@ export default function Home() {
               I play the piano and saxophone, and plan on learning the guitar soon.
             <br />
             <br />
+            <a href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link">Resume</a>
             <br />
           </p>
         </section>
@@ -69,7 +70,7 @@ export default function Home() {
               onClick={() => handleWorkItemClick(0)}
             >
               <div className="flex items-center">
-                <img src="/jd.png" alt="John Deere" className="w-6 h-6 mr-2" />
+                <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">Cornell - Undergrad Researcher</h3>
               </div>
               {expandedWorkIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
@@ -91,8 +92,8 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img
-                  src="/cu.png"
-                  alt="Cornell University"
+                  src="/af.png"
+                  alt="Space Force"
                   className="w-6 h-6 mr-2"
                 />
                 <h3 className="text-sm text-black">
@@ -119,8 +120,8 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img
-                  src="/jh.png"
-                  alt="Johns Hopkins"
+                  src="/hyperloop.png"
+                  alt="Hyperloop"
                   className="w-6 h-6 mr-2"
                 />
                 <h3 className="text-sm text-black">
