@@ -51,16 +51,13 @@ export default function Home() {
         </header>
         <section className="bg-white pb-4 border-gray-200">
           <p className="text-gray-600 text-sm">
-            I pursue exciting and impactful things.
+            Hey, I'm Anubhav, but some of my friends call me Bhuvy. I grew up in the suburbs of Chicago
+            and lived there my whole life before coming to college. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/">food</a>
+              &#20;and play/watch sports - I mostly play tennis, golf, and snowboard. I also like music -
+              I play the piano and saxophone, and plan on learning the guitar soon.
             <br />
-            <br /> I am currently building Fermata, a tool to red team vision
-            models using AI agents.
             <br />
-            <br />I built my first robot in middle school, since then I have
-            always been obsessed with the crossover between hardware and
-            computers. In the past, I have built computer vision systems for
-            melanoma diagnosis and currently work on vision systems at John
-            Deere for autonomy and automation.
+            <br />
           </p>
         </section>
 
@@ -73,7 +70,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img src="/jd.png" alt="John Deere" className="w-6 h-6 mr-2" />
-                <h3 className="text-sm text-black">John Deere - SWE Intern</h3>
+                <h3 className="text-sm text-black">Cornell - Undergrad Researcher</h3>
               </div>
               {expandedWorkIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
@@ -81,11 +78,10 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   <span className="font-semibold">
-                    Perception systems for automation and autonomy.
+                    Studying superconducting superlattices
                   </span>{" "}
-                  Worked on making ML models for perception systems. I worked
-                  primarily on crop analysis, safety, and classification models
-                  for weeds.
+                  Work in Yasuda Lab to use van der Waals materials to fabricate/study low dimensional heterostructures - 
+                  these have applications in non-volatile memory and quantum information science. See projects for more info.
                 </p>
               </div>
             )}
@@ -100,7 +96,7 @@ export default function Home() {
                   className="w-6 h-6 mr-2"
                 />
                 <h3 className="text-sm text-black">
-                  Cornell University - Undergraduate Researcher
+                  Air Force Research Lab - Research Intern (DoD Secret)
                 </h3>
               </div>
               {expandedWorkIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
@@ -109,17 +105,10 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   <span className="font-semibold">
-                    Modular tools for researchers to run causal inference
-                    experiments better.
+                    Ionospheric plasma physics / Materials development
                   </span>{" "}
-                  Worked tons on program architecture and optimization. Created
-                  modular systems that are easy to understand. (
-                  <a
-                    href="https://github.com/a3yu/causal_inference"
-                    className="text-blue-500"
-                  >
-                    https://github.com/a3yu/causal_inference
-                  </a>
+                  Experimentally modelled ionospheric plasma behavior. Explored novel processes to 
+                  develop materials relevant to the Space Force's mission.
                   ).
                 </p>
               </div>
@@ -135,7 +124,7 @@ export default function Home() {
                   className="w-6 h-6 mr-2"
                 />
                 <h3 className="text-sm text-black">
-                  Johns Hopkins - Machine Learning Researcher
+                  Cornell Hyperloop - Mechanical Engineer
                 </h3>
               </div>
               {expandedWorkIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
@@ -144,11 +133,10 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   <span className="font-semibold">
-                    Low cost computer vision system that diagnoses malignant
-                    skin lesions.
+                    Magnetic thrust and levitation
                   </span>{" "}
-                  This was apart of my high school ISEF project. First intro to
-                  ML.
+                  Worked with the team to design, engineer, and implement a linear induction motor in our pod.
+                  Currently working to engineer maglev.
                 </p>
               </div>
             )}
