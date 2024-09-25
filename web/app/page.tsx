@@ -53,7 +53,7 @@ export default function Home() {
           <p className="text-gray-600 text-sm">
             Hey, I'm Anubhav, but some of my friends call me Bhuvy. I grew up in the suburbs of Chicago
             and lived there my whole life before coming to college. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/">food</a>
-              &#20;and play/watch sports - I mostly play tennis, golf, and snowboard. I also like music -
+               and play/watch sports - I mostly play tennis, golf, and snowboard. I also like music -
               I play the piano and saxophone, and plan on learning the guitar soon.
             <br />
             <br />
