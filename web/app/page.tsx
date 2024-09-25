@@ -57,7 +57,12 @@ export default function Home() {
               I play the piano and saxophone, and plan on learning the guitar soon.
             <br />
             <br />
-            <a href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link", style="color: #ef4444">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
+              style={{ color: '#ef4444' }}
+            >
+              Resume
+            </a>
             <br />
           </p>
         </section>
@@ -118,7 +123,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img
-                  src="/af.jpg"
+                  src="/sf.png"
                   alt="Space Force"
                   className="w-6 h-6 mr-2"
                 />
