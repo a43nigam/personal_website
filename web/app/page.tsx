@@ -86,61 +86,6 @@ export default function Home() {
                 </p>
               </div>
             )}
-            <div
-              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleWorkItemClick(1)}
-            >
-              <div className="flex items-center">
-                <img
-                  src="/af.png"
-                  alt="Space Force"
-                  className="w-6 h-6 mr-2"
-                />
-                <h3 className="text-sm text-black">
-                  Air Force Research Lab - Research Intern (DoD Secret)
-                </h3>
-              </div>
-              {expandedWorkIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-            {expandedWorkIndex === 1 && (
-              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
-                <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Ionospheric plasma physics / Materials development
-                  </span>{" "}
-                  Experimentally modelled ionospheric plasma behavior. Explored novel processes to 
-                  develop materials relevant to the Space Force.
-                  ).
-                </p>
-              </div>
-            )}
-            <div
-              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleWorkItemClick(2)}
-            >
-              <div className="flex items-center">
-                <img
-                  src="/hyperloop.png"
-                  alt="Hyperloop"
-                  className="w-6 h-6 mr-2"
-                />
-                <h3 className="text-sm text-black">
-                  Cornell Hyperloop - Mechanical Engineer
-                </h3>
-              </div>
-              {expandedWorkIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-            {expandedWorkIndex === 2 && (
-              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
-                <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Magnetic thrust and levitation
-                  </span>{" "}
-                  Worked with the team to design, engineer, and implement a linear induction motor in our pod.
-                  Currently working to engineer maglev.
-                </p>
-              </div>
-            )}
           </div>
         </section>
 
@@ -174,7 +119,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img
-                  src="/af.png"
+                  src="/af.jpg"
                   alt="Space Force"
                   className="w-6 h-6 mr-2"
                 />
