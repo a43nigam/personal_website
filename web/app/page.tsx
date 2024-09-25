@@ -26,7 +26,7 @@ export default function Home() {
       <main className="container mx-auto my-12 px-4 w-full max-w-2xl">
         <header className="w-full py-6 text-gray-800">
           <div className="container flex flex-col">
-            <h1 className="text-3xl font-bold">Aedin Yu</h1>
+            <h1 className="text-3xl font-bold">Anubhav Nigam</h1>
             <nav className="mt-4 flex">
               <a
                 href="mailto:a43nigam@gmail.com"
