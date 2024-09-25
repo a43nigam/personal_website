@@ -57,7 +57,7 @@ export default function Home() {
               I play the piano and saxophone, and plan on learning the guitar soon.
             <br />
             <br />
-            <a href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link">Resume</a>
+            <a href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link", style="color: #ef4444">Resume</a>
             <br />
           </p>
         </section>
@@ -71,7 +71,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
-                <h3 className="text-sm text-black">Cornell - Undergrad Researcher</h3>
+                <h3 className="text-sm text-black">Cornell - Applied & Engineering Physics (B.S.)</h3>
               </div>
               {expandedWorkIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
@@ -79,10 +79,9 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   <span className="font-semibold">
-                    Studying superconducting superlattices
+                    Coursework:
                   </span>{" "}
-                  Work in Yasuda Lab to use van der Waals materials to fabricate/study low dimensional heterostructures - 
-                  these have applications in non-volatile memory and quantum information science. See projects for more info.
+                    Lasers and Photonics, Spacecraft Propulsion, Nanofabrication and Electronic Characterization
                 </p>
               </div>
             )}
