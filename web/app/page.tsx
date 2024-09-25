@@ -109,7 +109,7 @@ export default function Home() {
                     Ionospheric plasma physics / Materials development
                   </span>{" "}
                   Experimentally modelled ionospheric plasma behavior. Explored novel processes to 
-                  develop materials relevant to the Space Force's mission.
+                  develop materials relevant to the Space Force.
                   ).
                 </p>
               </div>
