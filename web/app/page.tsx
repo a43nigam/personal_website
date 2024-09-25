@@ -64,7 +64,6 @@ export default function Home() {
 
         <section className="bg-white py-6  border-gray-200">
           <h2 className="text-md font-semibold mb-4">Work</h2>
-          <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
               onClick={() => handleWorkItemClick(0)}
