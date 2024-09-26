@@ -10,8 +10,9 @@ import {
 } from "react-icons/fa";
 
 export default function Home() {
-  const [expandedSchoolIndex, expandedWorkIndex, setExpandedWorkIndex] = useState(-1);
-  const [expandedSchoolIndex, expandedStartupIndex, setExpandedStartupIndex] = useState(-1);
+  const [expandedSchoolIndex, setExpandedSchoolIndex] = useState(-1);
+  const [expandedWorkIndex, setExpandedWorkIndex] = useState(-1);
+  const [expandedStartupIndex, setExpandedStartupIndex] = useState(-1);
 
   const handleSchoolItemClick = (index: number) => {
     setExpandedSchoolIndex(expandedSchoolIndex === index ? -1 : index);
