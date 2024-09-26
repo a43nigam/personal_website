@@ -67,7 +67,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="bg-white py-6  border-gray-200">
+        <section className="bg-white py-6 border-black bg-yellow-100">
           <h2 className="text-md font-semibold mb-4">School</h2>
           <div className="space-y-2">
             <div
@@ -78,7 +78,7 @@ export default function Home() {
                 <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">Cornell - Applied & Engineering Physics (B.S.)</h3>
               </div>
-              {expandedWorkIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
+              {expandedEducationIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedWorkIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
