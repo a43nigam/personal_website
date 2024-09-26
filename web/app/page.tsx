@@ -199,7 +199,7 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   I am designing a system for my lab which will allow us to transfer single molecule thick
-                  layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
+                  layers of van der Waals materials to be able to stack them very precisely (uncertainty <5µm).&nbsp;
                   <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
