@@ -52,8 +52,8 @@ export default function Home() {
         <section className="bg-white pb-4 border-gray-200">
           <p className="text-gray-600 text-sm">
             Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I grew up in the suburbs of Chicago
-            and lived there my whole life before coming to college. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/">food</a>
-               and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music -
+            and lived there my whole life before coming to college. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
+               &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music -
               I play the piano and saxophone, and plan on learning the guitar soon.
             <br />
             <br />
@@ -61,14 +61,14 @@ export default function Home() {
               href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
               style={{ color: '#ef4444' }}
             >
-              Resume
+              <u>Resume Link</u>
             </a>
             <br />
           </p>
         </section>
 
         <section className="bg-white py-6  border-gray-200">
-          <h2 className="text-md font-semibold mb-4">Work</h2>
+          <h2 className="text-md font-semibold mb-4">School</h2>
           <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
