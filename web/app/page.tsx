@@ -83,7 +83,7 @@ export default function Home() {
                 <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">Cornell - Applied & Engineering Physics (B.S.)</h3>
               </div>
-              {expandedEducationIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
+              {expandedSchoolIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedWorkIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
