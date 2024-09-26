@@ -85,7 +85,7 @@ export default function Home() {
               </div>
               {expandedSchoolIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
-            {expandedWorkIndex === 0 && (
+            {expandedSchoolIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   <span className="font-semibold">
