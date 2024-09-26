@@ -191,24 +191,16 @@ export default function Home() {
               onClick={() => handleStartupItemClick(0)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">Gekko (2024)</h3>
+                <h3 className="text-sm text-black">2d Transfer Station (Current)</h3>
               </div>
               {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    GPTs for Canvas courses.
-                  </span>{" "}
-                  This was a cool project that I was able to work with a friend
-                  on. This died because we were building a product that
-                  didn&apos;t provide clear value to our customers (schools).
-                  What we built was intuitively useful for students, but it
-                  wasn&apos;t something schools were willing to adopt. <br />
-                  <br />
-                  Learning:{" "}
-                  <span className="font-semibold">Talk with customers.</span>
+                  I'm designing a system for my lab which will allow us to transfer single molecule thick
+                  layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
+                  <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
@@ -217,29 +209,15 @@ export default function Home() {
               onClick={() => handleStartupItemClick(1)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">TaskRaise (2023-2024)</h3>
+                <h3 className="text-sm text-black">Cryogenic Measurement Probe</h3>
               </div>
               {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 1 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Two-sided marketplace for labor seekers and fundraising
-                    organizations.
-                  </span>{" "}
-                  I was able to build this a lot faster. This died because there
-                  is a lot of red tape when student/youth labor is involved in
-                  anything. Customers were totally game with the idea until
-                  insurance and legal documents had to be filed, then it became
-                  a logistical nightmare.
-                  <br />
-                  <br />
-                  Learning:{" "}
-                  <span className="font-semibold">
-                    Understand and plan the &quot;how&quot; of your product
-                    early.
-                  </span>
+                  I designed and built a probe for my lab which allows us to measure our samples at 
+                  very cold (<10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
@@ -248,25 +226,15 @@ export default function Home() {
               onClick={() => handleStartupItemClick(2)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">MathRanks (2022-2023)</h3>
+                <h3 className="text-sm text-black">Tennis Ball Machine</h3>
               </div>
               {expandedStartupIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 2 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Online elo-based math competitions.
-                  </span>{" "}
-                  This was my first taste of development and building any sort
-                  of product. This died as I got busy with college apps and
-                  robotics. Learned tons about product vision and development.
-                  <br />
-                  <br />
-                  Learning:{" "}
-                  <span className="font-semibold">
-                    Baptism by fire is a great way to learn.
-                  </span>
+                  This was my first exposure to real-world engineering. I designed the entire system 
+                  in CAD and had to engineer my machine under a budget. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
