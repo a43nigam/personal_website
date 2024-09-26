@@ -72,12 +72,12 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="bg-white py-6 border-black bg-yellow-100">
+        <section className="bg-white py-6 border-gray-200">
           <h2 className="text-md font-semibold mb-4">School</h2>
           <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleWorkItemClick(0)}
+              onClick={() => handleSchoolItemClick(0)}
             >
               <div className="flex items-center">
                 <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
