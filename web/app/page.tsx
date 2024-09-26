@@ -191,16 +191,24 @@ export default function Home() {
               onClick={() => handleStartupItemClick(0)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">2d Transfer Station (Current)</h3>
+                <h3 className="text-sm text-black">Gekko (2024)</h3>
               </div>
               {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  I&aposm designing a system for my lab which will allow us to transfer single molecule thick
-                  layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
-                  <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                  <span className="font-semibold">
+                    GPTs for Canvas courses.
+                  </span>{" "}
+                  This was a cool project that I was able to work with a friend
+                  on. This died because we were building a product that
+                  didn&apos;t provide clear value to our customers (schools).
+                  What we built was intuitively useful for students, but it
+                  wasn&apos;t something schools were willing to adopt. <br />
+                  <br />
+                  Learning:{" "}
+                  <span className="font-semibold">Talk with customers.</span>
                 </p>
               </div>
             )}
@@ -209,15 +217,22 @@ export default function Home() {
               onClick={() => handleStartupItemClick(1)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">Cryogenic Measurement Probe</h3>
+                <h3 className="text-sm text-black">TaskRaise (2023-2024)</h3>
               </div>
               {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 1 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  I designed and built a probe for my lab which allows us to measure our samples at 
-                  very cold (<10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                  <span className="font-semibold">
+                    Two-sided marketplace for labor seekers and fundraising
+                    organizations.
+                  </span>{" "}
+                  I was able to build this a lot faster. This died because there
+                  is a lot of red tape when student/youth labor is involved in
+                  anything. Customers were totally game with the idea until
+                  insurance and legal documents had to be filed, then it became
+                  a logistical nightmare.
                   <br />
                   <br />
                   Learning:{" "}
