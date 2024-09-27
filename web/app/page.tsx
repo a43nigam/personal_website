@@ -58,7 +58,7 @@ export default function Home() {
           <p className="text-gray-600 text-sm">
             Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
                &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music and play the piano and saxophone, 
-              and plan on learning the guitar soon. The drop-downs below will tell you more about me professionally!
+              and plan on learning the guitar soon.
             <br></br>
             <br></br>
             <h3>Skills: Python, Matlab, SolidWorks, Ansys, EaglePCB, CFD, Optics, Chemical/Electric Propulsion, Photo/E-Beam Lithography, SEM/AFM Microscopy</h3>
