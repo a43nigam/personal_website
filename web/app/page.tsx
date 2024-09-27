@@ -47,9 +47,9 @@ export default function Home() {
               </a>
               <a
               href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
-              style={{ color: '#ef4444' }}
+              style={{ color: '#ef4444'}}
             >
-              <u>Resume Link</u>
+              <u>&nbsp;Resume</u>
             </a>
             </nav>
           </div>
@@ -60,68 +60,9 @@ export default function Home() {
                &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music and play the piano and saxophone, 
               and plan on learning the guitar soon. The drop-downs below will tell you more about me professionally!
             <br></br>
-            <h3>Skills:</h3> <p>CFD, Optics, Chemical/Electric Propulsion, Photo/E-Beam Lithography, SEM/AFM Microscopy</p>
+            <br></br>
+            <h3>Skills: CFD, Optics, Chemical/Electric Propulsion, Photo/E-Beam Lithography, SEM/AFM Microscopy</h3>
           </p>
-        </section>
-
-                <section className="bg-white py-6">
-          <span className="flex space-x-2 items-center mb-4">
-            <h2 className="text-md font-semibold text-black">Projects</h2>
-          </span>
-          <div className="space-y-2">
-            <div
-              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleStartupItemClick(0)}
-            >
-              <div className="flex items-center">
-                <h3 className="text-sm text-black">2D Transfer Station (Current)</h3>
-              </div>
-              {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-            {expandedStartupIndex === 0 && (
-              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
-                <p className="text-gray-700">
-                  I&apos;m designing a system for my lab which will allow us to transfer single molecule thick
-                  layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
-                  <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
-                </p>
-              </div>
-            )}
-            <div
-              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleStartupItemClick(1)}
-            >
-              <div className="flex items-center">
-                <h3 className="text-sm text-black">Cryogenic Measurement System</h3>
-              </div>
-              {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-            {expandedStartupIndex === 1 && (
-              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
-                <p className="text-gray-700">
-                  I designed and built a probe for my lab which allows us to measure our samples at 
-                  very cold (&lt;10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
-                </p>
-              </div>
-            )}
-            <div
-              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleStartupItemClick(2)}
-            >
-              <div className="flex items-center">
-                <h3 className="text-sm text-black">Automatic Tennis Ball Launcher</h3>
-              </div>
-              {expandedStartupIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-            {expandedStartupIndex === 2 && (
-              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
-                <p className="text-gray-700">
-                  This was my first exposure to real-world engineering. I designed the entire system from scratch
-                  in CAD and had to engineer my machine under a budget. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
-                </p>
-              </div>
-            )}
-          </div>
         </section>
 
         <section className="bg-white py-6 border-gray-200">
@@ -221,6 +162,66 @@ export default function Home() {
                 <p className="text-gray-700">
                   Worked with the team to design, engineer, and implement a linear induction motor in our pod.
                   Currently designing a maglev system.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+                        <section className="bg-white py-6">
+          <span className="flex space-x-2 items-center mb-4">
+            <h2 className="text-md font-semibold text-black">Projects</h2>
+          </span>
+          <div className="space-y-2">
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleStartupItemClick(0)}
+            >
+              <div className="flex items-center">
+                <h3 className="text-sm text-black">2D Transfer Station (Current)</h3>
+              </div>
+              {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedStartupIndex === 0 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  I&apos;m designing a system for my lab which will allow us to transfer single molecule thick
+                  layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
+                  <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                </p>
+              </div>
+            )}
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleStartupItemClick(1)}
+            >
+              <div className="flex items-center">
+                <h3 className="text-sm text-black">Cryogenic Measurement System</h3>
+              </div>
+              {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedStartupIndex === 1 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  I designed and built a probe for my lab which allows us to measure our samples at 
+                  very cold (&lt;10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                </p>
+              </div>
+            )}
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleStartupItemClick(2)}
+            >
+              <div className="flex items-center">
+                <h3 className="text-sm text-black">Automatic Tennis Ball Launcher</h3>
+              </div>
+              {expandedStartupIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedStartupIndex === 2 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  This was my first exposure to real-world engineering. I designed the entire system from scratch
+                  in CAD and had to engineer my machine under a budget. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
