@@ -45,11 +45,11 @@ export default function Home() {
               >
                 <FaLinkedin className="text-gray-600" />
               </a>
-            <a
+{/*             <a
               href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
               style={{ color: '#ef4444', marginLeft: '16px', fontSize: '0.875rem' }}
             >
-              <u>Resume</u>
+              <u>Resume</u> */}
             </a>
             </nav>
           </div>
