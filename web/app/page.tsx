@@ -179,7 +179,6 @@ export default function Home() {
                 <p className="text-gray-700">
                   I&apos;m designing a system for my lab which will allow us to transfer single molecule thick
                   layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
-                  <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
@@ -196,7 +195,7 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   I designed and built a probe for my lab which allows us to measure our samples at 
-                  very cold (&lt;10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                  very cold (&lt;10K) temperatures.
                 </p>
               </div>
             )}
@@ -213,7 +212,7 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   This was my first exposure to real-world engineering. I designed the entire system from scratch
-                  in CAD and had to engineer my machine under a budget. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                   in CAD and had to engineer my machine under a budget. {/*<a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a> */}
                 </p>
               </div>
             )}
