@@ -36,12 +36,14 @@ export default function Home() {
               <a
                 href="mailto:a43nigam@gmail.com"
                 className="mr-2 hover:text-gray-400 border-gray-200 border rounded p-1"
+                target="_blank"
               >
                 <CiMail className="text-gray-600" />
               </a>
               <a
                 href="https://www.linkedin.com/in/anubhav-nigam/"
                 className="mx-2 hover:text-gray-400 border-gray-200 border rounded p-1"
+                target="_blank"
               >
                 <FaLinkedin className="text-gray-600" />
               </a>
@@ -56,7 +58,7 @@ export default function Home() {
         </header>
         <section className="bg-white pb-4 border-gray-200">
           <p className="text-gray-600 text-sm">
-            Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
+            Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" target="_blank" style={{ color: '#ef4444' }}><u>food</u></a>
                &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music and play the piano and saxophone, 
               and plan on learning the guitar soon.
             <br></br>
@@ -234,7 +236,10 @@ export default function Home() {
                   and planned on working with Dr. Frisch during the summer of 2024, but funding eventually fell through.
                   Here is the&nbsp;
                   <a href="https://drive.google.com/file/d/1tpD9lRtIwuELRE6dxN9GMo4vOKZFmOUK/view?usp=sharing" 
-                     style={{ color: '#ef4444' }}><u>research proposal</u></a>.
+                     style={{ color: '#ef4444' }}
+                     target="_blank">
+                    <u>research proposal</u>
+                  </a>.
                 </p>
               </div>
             )}
