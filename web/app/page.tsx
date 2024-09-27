@@ -49,8 +49,8 @@ export default function Home() {
               href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
               style={{ color: '#ef4444', marginLeft: '16px', fontSize: '0.875rem' }}
             >
-              <u>Resume</u> */}
-            </a>
+              <u>Resume</u> 
+            </a> */}
             </nav>
           </div>
         </header>
@@ -212,7 +212,7 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   This was my first exposure to real-world engineering. I designed the entire system from scratch
-                   in CAD and had to engineer my machine under a budget. {/*<a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a> */}
+                   in CAD and had to engineer my machine under a budget.
                 </p>
               </div>
             )}
