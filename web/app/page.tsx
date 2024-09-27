@@ -67,7 +67,6 @@ export default function Home() {
             >
               <u>Resume Link</u>
             </a>
-            <br />
           </p>
         </section>
 
@@ -117,11 +116,9 @@ export default function Home() {
             {expandedWorkIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Studying superconducting superlattices
-                  </span>{" "}
-                  Work in Yasuda Lab to use van der Waals materials to fabricate/study low dimensional heterostructures - 
-                  these have applications in non-volatile memory and quantum information science. See projects for more info.
+                  Work in <a href="https://www.yasudalab.org" style={{ color: '#ef4444' }}><u>Yasuda Lab</u></a> to use 
+                  van der Waals materials to fabricate/study low dimensional heterostructures, specifically superconducting 
+                  superlattices - these have applications in non-volatile memory and quantum information science. See projects for more info.
                 </p>
               </div>
             )}
@@ -144,12 +141,8 @@ export default function Home() {
             {expandedWorkIndex === 1 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Ionospheric plasma physics / Materials development
-                  </span>{" "}
-                  Experimentally modelled ionospheric plasma behavior. Explored novel processes to 
-                  develop materials relevant to the Space Force.
-                  ).
+                  Experimentally modelled and studied ionospheric plasma behavior. Explored novel processes to 
+                  develop exotic materials relevant to the Space Force.
                 </p>
               </div>
             )}
@@ -172,11 +165,8 @@ export default function Home() {
             {expandedWorkIndex === 2 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Magnetic thrust and levitation
-                  </span>{" "}
                   Worked with the team to design, engineer, and implement a linear induction motor in our pod.
-                  Currently working to engineer maglev.
+                  Currently designing a maglev system.
                 </p>
               </div>
             )}
@@ -186,7 +176,6 @@ export default function Home() {
         <section className="bg-white py-6">
           <span className="flex space-x-2 items-center mb-4">
             <h2 className="text-md font-semibold text-black">Past Projects</h2>
-            <h2 className="italic text-xs">(Build quick, fail fast)</h2>
           </span>
           <div className="space-y-2">
             <div
@@ -236,7 +225,7 @@ export default function Home() {
             {expandedStartupIndex === 2 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  This was my first exposure to real-world engineering. I designed the entire system 
+                  This was my first exposure to real-world engineering. I designed the entire system from scratch
                   in CAD and had to engineer my machine under a budget. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
