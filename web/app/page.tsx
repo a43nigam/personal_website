@@ -56,10 +56,9 @@ export default function Home() {
         </header>
         <section className="bg-white pb-4 border-gray-200">
           <p className="text-gray-600 text-sm">
-            Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I grew up in the suburbs of Chicago
-            and lived there my whole life before coming to college. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
-               &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music -
-              I play the piano and saxophone, and plan on learning the guitar soon. The drop downs below will tell you more about me professionally.
+            Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
+               &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music and play the piano and saxophone, 
+              and plan on learning the guitar soon. The drop-downs below will tell you more about me professionally!
             <br />
             <br />
             <a
@@ -195,14 +194,14 @@ export default function Home() {
               onClick={() => handleStartupItemClick(0)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">2d Transfer Station (Current)</h3>
+                <h3 className="text-sm text-black">2D Transfer Station (Current)</h3>
               </div>
               {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  I&aposm designing a system for my lab which will allow us to transfer single molecule thick
+                  I&apos;m designing a system for my lab which will allow us to transfer single molecule thick
                   layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
                   <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
@@ -213,29 +212,15 @@ export default function Home() {
               onClick={() => handleStartupItemClick(1)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">TaskRaise (2023-2024)</h3>
+                <h3 className="text-sm text-black">Cryogenic Measurement System</h3>
               </div>
               {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 1 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Two-sided marketplace for labor seekers and fundraising
-                    organizations.
-                  </span>{" "}
-                  I was able to build this a lot faster. This died because there
-                  is a lot of red tape when student/youth labor is involved in
-                  anything. Customers were totally game with the idea until
-                  insurance and legal documents had to be filed, then it became
-                  a logistical nightmare.
-                  <br />
-                  <br />
-                  Learning:{" "}
-                  <span className="font-semibold">
-                    Understand and plan the &quot;how&quot; of your product
-                    early.
-                  </span>
+                  I designed and built a probe for my lab which allows us to measure our samples at 
+                  very cold (<10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
