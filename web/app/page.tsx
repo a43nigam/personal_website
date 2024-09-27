@@ -65,7 +65,7 @@ export default function Home() {
           </p>
         </section>
 
-                 <section className="bg-white py-4  border-gray-200">
+{/*                  <section className="bg-white py-4  border-gray-200">
           <span className="flex space-x-2 items-center mb-4">
             <h2 className="text-md font-semibold text-black">School/Work</h2>
           </span>
@@ -158,13 +158,30 @@ export default function Home() {
               </div>
             )}
           </div>
-        </section>
+        </section> */}
 
                         <section className="bg-white py-6">
           <span className="flex space-x-2 items-center mb-4">
             <h2 className="text-md font-semibold text-black">Projects</h2>
           </span>
           <div className="space-y-2">
+            <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleStartupItemClick(3)}
+            >
+              <div className="flex items-center">
+                <h3 className="text-sm text-black">Underwater Optical Communication (Current)</h3>
+              </div>
+              {expandedStartupIndex === 3 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedStartupIndex === 3 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  I&apos;m developing a system which will enable reliable underwater communication via
+                  optical means (lasers) - this will eventually be applied to create underwater swarms.
+                </p>
+              </div>
+            )}
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
               onClick={() => handleStartupItemClick(0)}
