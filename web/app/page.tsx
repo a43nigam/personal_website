@@ -72,15 +72,15 @@ export default function Home() {
           <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleSchoolItemClick(0)}
+              onClick={() => handleWorkItemClick(3)}
             >
               <div className="flex items-center">
                 <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
-                <h3 className="text-sm text-black">Cornell - Applied & Engineering Physics (B.S.)</h3>
+                <h3 className="text-sm text-black">Cornell - (B.S.) Applied & Engineering Physics</h3>
               </div>
-              {expandedSchoolIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
+              {expandedWorkIndex === 3 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
-            {expandedSchoolIndex === 0 && (
+            {expandedWorkIndex === 3 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   <span className="font-semibold">
