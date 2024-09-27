@@ -230,8 +230,8 @@ export default function Home() {
                 <p className="text-gray-700">
                   I worked with Professor Henry Frisch at UChicago to identify applications of 
                   laminated microchannel plates (developed originally for neutrino detection) in 
-                  medical devices, specifically PET scanners. I did some preliminary experiment and planned
-                  on working with Dr. Frisch during the summer of 2024, but funding eventually fell through.
+                  medical devices, specifically PET scanners. I did some preliminary experimentation at Cornell
+                  and planned on working with Dr. Frisch during the summer of 2024, but funding eventually fell through.
                   Here is the&nbsp;
                   <a href="https://drive.google.com/file/d/1tpD9lRtIwuELRE6dxN9GMo4vOKZFmOUK/view?usp=sharing" 
                      style={{ color: '#ef4444' }}><u>research proposal</u></a>.
