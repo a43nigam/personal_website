@@ -76,7 +76,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
-                <h3 className="text-sm text-black">Cornell - (B.S.) Applied & Engineering Physics</h3>
+                <h3 className="text-sm text-black">Cornell - Applied & Engineering Physics (B.S.)</h3>
               </div>
               {expandedWorkIndex === 3 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
