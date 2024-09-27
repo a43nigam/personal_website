@@ -45,6 +45,12 @@ export default function Home() {
               >
                 <FaLinkedin className="text-gray-600" />
               </a>
+              <a
+              href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
+              style={{ color: '#ef4444' }}
+            >
+              <u>Resume Link</u>
+            </a>
             </nav>
           </div>
         </header>
@@ -53,14 +59,8 @@ export default function Home() {
             Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
                &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music and play the piano and saxophone, 
               and plan on learning the guitar soon. The drop-downs below will tell you more about me professionally!
-            <br />
-            <br />
-            <a
-              href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
-              style={{ color: '#ef4444' }}
-            >
-              <u>Resume Link</u>
-            </a>
+            <br></br>
+            <h3>Skills:</h3> <p>CFD, Optics, Chemical/Electric Propulsion, Photo/E-Beam Lithography, SEM/AFM Microscopy</p>
           </p>
         </section>
 
