@@ -218,21 +218,21 @@ export default function Home() {
             )}
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleStartupItemClick(1)}
+              onClick={() => handleStartupItemClick(4)}
             >
               <div className="flex items-center">
                 <h3 className="text-sm text-black">Laminated Microchannel Plates</h3>
               </div>
-              {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
+              {expandedStartupIndex === 4 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
-            {expandedStartupIndex === 1 && (
+            {expandedStartupIndex === 4 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   I worked with Professor Henry Frisch at UChicago to identify applications of 
                   laminated microchannel plates (developed originally for neutrino detection) in 
                   medical devices, specifically PET scanners. I did some preliminary experiment and planned
                   on working with Dr. Frisch during the summer of 2024, but funding eventually fell through.
-                  Here is the 
+                  Here is the&nbsp;
                   <a href="https://drive.google.com/file/d/1tpD9lRtIwuELRE6dxN9GMo4vOKZFmOUK/view?usp=sharing" 
                      style={{ color: '#ef4444' }}><u>research proposal</u></a>.
                 </p>
