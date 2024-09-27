@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-      <main className="container mx-auto my-12 px-4 w-full max-w-2xl">
+      <main className="container mx-auto mt-8 mb-12 px-4 w-full max-w-2xl">
         <header className="w-full py-3 text-gray-800">
           <div className="container flex flex-col">
             <h1 className="text-3xl font-bold">Anubhav Nigam</h1>
