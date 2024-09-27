@@ -63,7 +63,7 @@ export default function Home() {
               and plan on learning the guitar soon.
             <br></br>
             <br></br>
-            <h3>Skills: Python, Matlab, SolidWorks, Ansys, EaglePCB, CFD, Optics, Chemical/Electric Propulsion, Photo/E-Beam Lithography, SEM/AFM Microscopy</h3>
+            <h3>Skills: Python, Matlab, SolidWorks, Ansys, EaglePCB, CFD, Optics, Chemical/Electric Propulsion, Photo/E-Beam Lithography, SEM/AFM Microscopy, Thin Film Deposition</h3>
           </p>
         </section>
 
