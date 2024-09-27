@@ -59,7 +59,7 @@ export default function Home() {
             Hey, I&apos;m Anubhav, but some of my friends call me Bhuvy. I grew up in the suburbs of Chicago
             and lived there my whole life before coming to college. I like to cook/eat <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>food</u></a>
                &nbsp;and play/watch sports, but mostly play tennis, golf, and snowboard. I also like music -
-              I play the piano and saxophone, and plan on learning the guitar soon.
+              I play the piano and saxophone, and plan on learning the guitar soon. The drop downs below will tell you more about me professionally.
             <br />
             <br />
             <a
@@ -195,24 +195,16 @@ export default function Home() {
               onClick={() => handleStartupItemClick(0)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">Gekko (2024)</h3>
+                <h3 className="text-sm text-black">2d Transfer Station (Current)</h3>
               </div>
               {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    GPTs for Canvas courses.
-                  </span>{" "}
-                  This was a cool project that I was able to work with a friend
-                  on. This died because we were building a product that
-                  didn&apos;t provide clear value to our customers (schools).
-                  What we built was intuitively useful for students, but it
-                  wasn&apos;t something schools were willing to adopt. <br />
-                  <br />
-                  Learning:{" "}
-                  <span className="font-semibold">Talk with customers.</span>
+                  I'm designing a system for my lab which will allow us to transfer single molecule thick
+                  layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
+                  <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
