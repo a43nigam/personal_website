@@ -73,7 +73,9 @@ export default function Home() {
         </section>
 
         <section className="bg-white py-6 border-gray-200">
-          <h2 className="text-md font-semibold mb-4">School</h2>
+          <span className="flex space-x-2 items-center mb-4">
+            <h2 className="text-md font-semibold text-black">School</h2>
+          </span>
           <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
@@ -99,7 +101,9 @@ export default function Home() {
         </section>
 
         <section className="bg-white py-6  border-gray-200">
-          <h2 className="text-md font-semibold mb-4">Work</h2>
+          <span className="flex space-x-2 items-center mb-4">
+            <h2 className="text-md font-semibold text-black">Work</h2>
+          </span>
           <div className="space-y-2">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
