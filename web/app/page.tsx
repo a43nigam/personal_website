@@ -201,7 +201,7 @@ export default function Home() {
             {expandedStartupIndex === 0 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  I&aposm designing a system for my lab which will allow us to transfer single molecule thick
+                  I&apos;m designing a system for my lab which will allow us to transfer single molecule thick
                   layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
                   <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
@@ -220,7 +220,7 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   I designed and built a probe for my lab which allows us to measure our samples at 
-                  very cold (<10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
+                  very cold (&lt;10K) temperatures. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
@@ -229,25 +229,15 @@ export default function Home() {
               onClick={() => handleStartupItemClick(2)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">MathRanks (2022-2023)</h3>
+                <h3 className="text-sm text-black">Automatic Tennis Ball Launcher</h3>
               </div>
               {expandedStartupIndex === 2 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
             {expandedStartupIndex === 2 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  <span className="font-semibold">
-                    Online elo-based math competitions.
-                  </span>{" "}
-                  This was my first taste of development and building any sort
-                  of product. This died as I got busy with college apps and
-                  robotics. Learned tons about product vision and development.
-                  <br />
-                  <br />
-                  Learning:{" "}
-                  <span className="font-semibold">
-                    Baptism by fire is a great way to learn.
-                  </span>
+                  This was my first exposure to real-world engineering. I designed the entire system 
+                  in CAD and had to engineer my machine under a budget. <a href="https://www.instagram.com/bubbles_eats_fr/" style={{ color: '#ef4444' }}><u>Read More</u></a>
                 </p>
               </div>
             )}
