@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <main className="container mx-auto my-12 px-4 w-full max-w-2xl">
-        <header className="w-full py-6 text-gray-800">
+        <header className="w-full py-3 text-gray-800">
           <div className="container flex flex-col">
             <h1 className="text-3xl font-bold">Anubhav Nigam</h1>
             <nav className="mt-4 flex">
@@ -46,11 +46,11 @@ export default function Home() {
                 <FaLinkedin className="text-gray-600" />
               </a>
               <a
-              href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
-              style={{ color: '#ef4444'}}
-            >
-              <u>&nbsp;Resume</u>
-            </a>
+                href="https://drive.google.com/file/d/16j60NBSmHNwY7mJ_Yj_ZQdxC7eNpR_Tw/view?usp=share_link"
+                style="color: #ef4444; margin-left: 16px; font-size: 0.875rem;"
+              >
+                <u>&nbsp;Resume</u>
+              </a>
             </nav>
           </div>
         </header>
@@ -65,7 +65,7 @@ export default function Home() {
           </p>
         </section>
 
-                 <section className="bg-white py-6  border-gray-200">
+                 <section className="bg-white py-4  border-gray-200">
           <span className="flex space-x-2 items-center mb-4">
             <h2 className="text-md font-semibold text-black">School/Work</h2>
           </span>
