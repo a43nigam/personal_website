@@ -179,7 +179,7 @@ export default function Home() {
             {expandedStartupIndex === 5 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  I work with the Yasuda group to study nanomaterials.&nbsp;<a href="https://drive.google.com/file/d/1seqXPTMb6S33kLIFxhpMc9jnc6ug-LxL/view?usp=sharing" 
+                  I work with the Yasuda group to study nanomaterials.&nbsp;<a href="https://drive.google.com/file/d/1YqmvLswqt_TtEVW7aM7dI__Ce7M3N3gr/view?usp=sharing" 
                      style={{ color: '#ef4444' }}
                      target="_blank">
                     <u>Read more</u>
