@@ -167,6 +167,26 @@ export default function Home() {
             <h2 className="text-md font-semibold text-black">Projects</h2>
           </span>
           <div className="space-y-2">
+             <div
+              className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
+              onClick={() => handleStartupItemClick(4)}
+            >
+              <div className="flex items-center">
+                <h3 className="text-sm text-black">Quantum Nanomaterial Research (Current)</h3>
+              </div>
+              {expandedStartupIndex === 4 ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            {expandedStartupIndex === 4 && (
+              <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
+                <p className="text-gray-700">
+                  I work with the Yasuda group to study nanomaterials.&nbsp;<a href="https://drive.google.com/file/d/1seqXPTMb6S33kLIFxhpMc9jnc6ug-LxL/view?usp=sharing" 
+                     style={{ color: '#ef4444' }}
+                     target="_blank">
+                    <u>Read more</u>.
+                  </a>.
+                </p>
+              </div>
+            )}
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
               onClick={() => handleStartupItemClick(3)}
