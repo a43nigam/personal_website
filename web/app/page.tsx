@@ -243,7 +243,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(4)}
             >
               <div className="flex items-center">
-                <h3 className="text-sm text-black">Laminated Microchannel Plates</h3>
+                <h3 className="text-sm text-black">Microchannel Plate Particle Detection</h3>
               </div>
               {expandedStartupIndex === 4 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
