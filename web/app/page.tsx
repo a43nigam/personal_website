@@ -169,20 +169,20 @@ export default function Home() {
           <div className="space-y-2">
              <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-200 pb-2"
-              onClick={() => handleStartupItemClick(4)}
+              onClick={() => handleStartupItemClick(5)}
             >
               <div className="flex items-center">
                 <h3 className="text-sm text-black">Quantum Nanomaterial Research (Current)</h3>
               </div>
-              {expandedStartupIndex === 4 ? <FaChevronUp /> : <FaChevronDown />}
+              {expandedStartupIndex === 5 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
-            {expandedStartupIndex === 4 && (
+            {expandedStartupIndex === 5 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   I work with the Yasuda group to study nanomaterials.&nbsp;<a href="https://drive.google.com/file/d/1seqXPTMb6S33kLIFxhpMc9jnc6ug-LxL/view?usp=sharing" 
                      style={{ color: '#ef4444' }}
                      target="_blank">
-                    <u>Read more</u>.
+                    <u>Read more</u>
                   </a>.
                 </p>
               </div>
