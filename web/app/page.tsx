@@ -218,6 +218,11 @@ export default function Home() {
                 <p className="text-gray-700">
                   I&apos;m designing a system for my lab which will allow us to transfer single molecule thick
                   layers of van der Waals materials to be able to stack them very precisely (±5µm).&nbsp;
+                  <a href="https://drive.google.com/file/d/12T6mRmnMJDlOkU0SnEi17z9s8Gujc7hp/view?usp=sharing" 
+                     style={{ color: '#ef4444' }}
+                     target="_blank">
+                    <u>Read more</u>
+                  </a>.
                 </p>
               </div>
             )}
