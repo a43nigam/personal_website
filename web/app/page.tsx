@@ -255,7 +255,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(4)}
             >
               <div className="flex items-center">
-                <img src="/uc.png" alt="uchicago" width="20" height="24" className="w-6 h-6 mr-2" />
+                <img src="/uchicago.png" alt="uchicago" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">Microchannel Plate Particle Detection</h3>
               </div>
               {expandedStartupIndex === 4 ? <FaChevronUp /> : <FaChevronDown />}
