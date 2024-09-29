@@ -172,6 +172,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(5)}
             >
               <div className="flex items-center">
+                <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">Quantum Nanomaterial Research (Current)</h3>
               </div>
               {expandedStartupIndex === 5 ? <FaChevronUp /> : <FaChevronDown />}
@@ -209,6 +210,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(0)}
             >
               <div className="flex items-center">
+                <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">2D Transfer Station (Current)</h3>
               </div>
               {expandedStartupIndex === 0 ? <FaChevronUp /> : <FaChevronDown />}
@@ -231,6 +233,7 @@ export default function Home() {
               onClick={() => handleStartupItemClick(1)}
             >
               <div className="flex items-center">
+                <img src="/cu.png" alt="Cornell" className="w-6 h-6 mr-2" />
                 <h3 className="text-sm text-black">Cryogenic Measurement System</h3>
               </div>
               {expandedStartupIndex === 1 ? <FaChevronUp /> : <FaChevronDown />}
