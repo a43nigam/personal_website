@@ -256,7 +256,7 @@ export default function Home() {
             >
               <div className="flex items-center">
                 <img src="/uchicago.png" alt="uchicago" className="w-6 h-6 mr-2" />
-                <h3 className="text-sm text-black">Microchannel Plate Particle Detection</h3>
+                <h3 className="text-sm text-black">Microchannel Plate Particle Detector</h3>
               </div>
               {expandedStartupIndex === 4 ? <FaChevronUp /> : <FaChevronDown />}
             </div>
@@ -288,8 +288,14 @@ export default function Home() {
             {expandedStartupIndex === 2 && (
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
-                  This was my first exposure to real-world engineering. I designed the entire system from scratch
-                   in CAD and had to engineer my machine under a budget.
+                  This was my first exposure to real-world engineering. I designed the entire system from scratch 
+                  in CAD and had to engineer my machine under a budget. This being my first real project, I documented
+                  it very poorly - it was also a few years ago during the pandemic. I've done my best to document it &nbsp;
+                  <a href="https://drive.google.com/file/d/1QikwpGcgBHDIERVQPPPHPemorV9nE2zY/view?usp=sharing" 
+                     style={{ color: '#ef4444' }}
+                     target="_blank">
+                    <u>here</u>
+                  </a>.
                 </p>
               </div>
             )}
