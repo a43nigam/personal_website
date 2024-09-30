@@ -242,7 +242,7 @@ export default function Home() {
               <div className="text-sm transition-all duration-300 ease-in-out overflow-hidden">
                 <p className="text-gray-700">
                   I designed and built a probe for my lab which allows us to measure our samples at 
-                  very cold (&lt;1.5K) temperatures. &nbsp;<a href="https://drive.google.com/file/d/1IuZToAt6wPuzQhtcjHU-t1dLO8-oafNR/view?usp=sharing" 
+                  very cold (&lt;1.5K) temperatures.&nbsp;<a href="https://drive.google.com/file/d/1IuZToAt6wPuzQhtcjHU-t1dLO8-oafNR/view?usp=sharing" 
                      style={{ color: '#ef4444' }}
                      target="_blank">
                     <u>Read more</u>
