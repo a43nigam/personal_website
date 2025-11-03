@@ -47,7 +47,7 @@ export default function Home() {
 
         <section className="bg-white py-6">
           <span className="flex space-x-2 items-center mb-4">
-            <h2 className="text-md font-semibold text-black">Projects (click for details)</h2>
+            <h2 className="text-md font-semibold text-black">Projects</h2>
           </span>
           <div className="space-y-2">
             
