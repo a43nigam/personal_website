@@ -61,7 +61,7 @@
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/minipod.png" alt="Linear induction motor design"
-                        style="max-width:70%; height:auto;">
+                        style="max-width:60%; height:auto;">
                     <figcaption>'Minipod' small scale demonstrator</figcaption>
                 </figure>
 
@@ -73,7 +73,7 @@
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/lev_tr.png" alt="Linear induction motor design"
-                        style="max-width:70%; height:auto;">
+                        style="max-width:60%; height:auto;">
                     <figcaption>Levitation test rig</figcaption>
                 </figure>
             </div>
@@ -88,7 +88,7 @@
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/lim_cad.png" alt="Linear induction motor design"
-                        style="max-width:70%; height:auto;">
+                        style="max-width:60%; height:auto;">
                     <figcaption>LIM design</figcaption>
                 </figure>
 
@@ -101,7 +101,7 @@
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/flywheel_tr.png" alt="Linear induction motor design"
-                        style="max-width:70%; height:auto;">
+                        style="max-width:60%; height:auto;">
                     <figcaption>'Flywheel test rig. The LIM is mounted behind the wheel (note the black corner of it
                         sticking out from the back) at a ~5mm airgap. Getting this big of a wheel to rotate without
                         wobbling was challenging, especially given how we are rotating it.</figcaption>
@@ -109,7 +109,7 @@
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/thrust_tr.png" alt="Linear induction motor design"
-                        style="max-width:70%; height:auto;">
+                        style="max-width:60%; height:auto;">
                     <figcaption>Thrust test rig. It uses a load cell to measure force produced by the LIM. Note the
                         similarities in steup to the levitation test rig, that is on purpose to save money + time!
                     </figcaption>
@@ -126,8 +126,24 @@
 
             <figure style="text-align:center; margin: 20px 0;">
                 <img src="../assets/braking_module.png" alt="Linear induction motor design"
-                    style="max-width:70%; height:auto;">
+                    style="max-width:60%; height:auto;">
                 <figcaption>Magnetic braking module.
+                </figcaption>
+            </figure>
+
+            Our system is really interesting; it consists of two disks, each with 6 axially polarized magnets organized
+            circularly with alternating polarities. When the top and bottom disk are turned such that magnets of the
+            same polarity are stacked, magnetic fields are expelled outward, to interact with the track. When the disks
+            are rotated to have alternating polarities on top of eachother, the magnetic fields are much stronger in
+            between the magnets, and do not propagate outward as much.
+
+            We use a single stepper motor and gears to be able to rotate the disks - there is a lot of torque required
+            given the number of magnets.
+
+            <figure style="text-align:center; margin: 20px 0;">
+                <img src="../assets/brake_mounting" alt="Linear induction motor design"
+                    style="max-width:60%; height:auto;">
+                <figcaption>Magnetic braking system integrated with our chassis.
                 </figcaption>
             </figure>
         </section>
