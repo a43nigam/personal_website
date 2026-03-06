@@ -52,7 +52,6 @@
             </div>
 
             <div class="mt-4">
-                <br>
                 For <b>levitation</b>, I wrote a 3 DoF code of a 4-magnet system. We're making a small-scale
                 demonstrator
                 for levitation (minipod) on which these controls will be implemented.
@@ -65,7 +64,7 @@
                     <figcaption>'Minipod' small scale demonstrator</figcaption>
                 </figure>
 
-                <br> I designed the circuit for levitation control; we vary current into electromagnets to control
+                I designed the circuit for levitation control; we vary current into electromagnets to control
                 force, so we needed a robust circuit which could ensure that we were driving the correct current into
                 our electromagnets, even as resistances in the system changed due to heat.
                 <br> I also designed the test apparatus for levitation, which allows us to characterize the
@@ -79,7 +78,6 @@
             </div>
 
             <div class="mt-4">
-                <br>
                 For <b>propulsion</b>, we are designing and manufacturing a custom linear induction motor (LIM). For
                 this, I
                 wrote a script to calculate thrust and slip velocity given motor parameters, which allowed us to make
@@ -88,21 +86,19 @@
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/LIM_cad.png" alt="Linear induction motor design"
-                        style="max-width:50%; height:auto;">
+                        style="max-width:65%; height:auto;">
                     <figcaption>LIM design</figcaption>
                 </figure>
 
-                <br><br>
-
-                I designed
-                test systems for our propulsion system as well. We have a flywheel test rig and a thrust test rig - the
+                I designed test systems for our propulsion system as well. We have a flywheel test rig and a thrust test
+                rig - the
                 flywheel rig enables characterization of top speed, and the thrust rig helps find maximum force produced
                 from a standstill.
 
                 <figure style="text-align:center; margin: 20px 0;">
                     <img src="../assets/flywheel.png" alt="Linear induction motor design"
                         style="max-width:50%; height:auto;">
-                    <figcaption>'Flywheel test rig. The LIM is mounted behind the wheel (note the black corner of it
+                    <figcaption>Flywheel test rig. The LIM is mounted behind the wheel (note the black corner of it
                         sticking out from the back) at a ~5mm airgap. Getting this big of a wheel to rotate without
                         wobbling was challenging, especially given how we are rotating it.</figcaption>
                 </figure>
@@ -117,8 +113,7 @@
             </div>
 
             <div class="mt-4">
-                <br>
-                I have also done a good amount of work on braking systems for the pod. We employ two separate brakes:
+                I have also designed braking systems for the pod. We employ two separate brakes:
                 pneumatic brakes, which are a standard friction-based system, and magnetic brakes, which are contactless
                 and more efficient/resilient for use at high speeds. The ideal use case is to use our magnetic brakes at
                 high speeds, then mechanical brakes for stopping completely once we reach low speeds.

@@ -44,6 +44,7 @@ header {
   padding: 1.5rem 0;
   margin-bottom: 0.5rem;
   margin-top: -1rem;
+  position: relative;
   /* Reduced margin */
 }
 
@@ -155,7 +156,7 @@ p {
   display: flex;
   align-items: center;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   background: none;
   border: none;
   cursor: pointer;
