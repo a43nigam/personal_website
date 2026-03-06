@@ -24,20 +24,16 @@ body {
   color: var(--text-primary);
   line-height: 1.5;
   min-height: 100vh;
-  /* Removed align-items: center to allow left alignment within container */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .container {
   width: 100%;
   max-width: 42rem;
-  /* max-w-2xl */
-  padding: 1rem;
-  /* Added vertical padding for safety on small screens */
+  padding: 6rem 1rem 1rem 1rem;
   margin: 0 auto;
-  /* Centered horizontally */
 }
 
 header {
