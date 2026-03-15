@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+    <meta name="description" content="Public live stream page">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="stream.css">
+</head>
+
+<body class="stream-page">
+    <main class="container stream-container">
+        <a href="../index.html" class="back-button">
+            <span class="back-icon">←</span>
+            <span>Home</span>
+        </a>
+
+        <header class="stream-header">
+            <div class="stream-kicker">Always On</div>
+            <h1 id="stream-title">Live Stream</h1>
+            <p id="stream-description" class="stream-copy">
+                Public viewer for the always-on stream. The player reconnects automatically when the feed drops.
+            </p>
+        </header>
+
+        <section class="stream-shell">
+            <section class="stream-stage">
+                <div class="stream-player-shell">
+                    <div class="stream-badge">Live</div>
+                    <video id="stream-player" controls autoplay muted playsinline></video>
+                </div>
+                <div id="stream-status" class="stream-status">Waiting for stream configuration.</div>
+            </section>
+
+            <aside class="stream-sidebar">
+                <section class="stream-card">
+                    <h2>Share This Page</h2>
+                    <p>
+                        Anyone can use this URL to watch the stream in a browser once the HLS feed is configured.
+                    </p>
+                    <div id="viewer-url" class="stream-code"></div>
+                </section>
+
+                <section class="stream-card">
+                    <h2>Direct Feeds</h2>
+                    <p>Browsers should use HLS. CV tooling should use RTSP or HLS directly.</p>
+                    <div id="hls-url" class="stream-code">HLS not configured.</div>
+                    <div id="rtsp-url" class="stream-code">RTSP not configured.</div>
+                </section>
+
+                <section class="stream-card">
+                    <h2>Notes</h2>
+                    <p>
+                        This page only renders the stream. The 24/7 uptime depends on the backing relay staying up.
+                    </p>
+                    <p class="stream-tip">
+                        Set `hlsUrl` and `rtspUrl` in `stream-config.js`, or override the HLS source with
+                        `?src=https://your-stream-host/path/index.m3u8`.
+                    </p>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <script src="stream-config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        (function () {
+            const config = window.STREAM_CONFIG || {};
+            const params = new URLSearchParams(window.location.search);
+            const hlsUrl = (params.get("src") || config.hlsUrl || "").trim();
+            const rtspUrl = (params.get("rtsp") || config.rtspUrl || "").trim();
+            const posterUrl = (config.posterUrl || "").trim();
+            const player = document.getElementById("stream-player");
+            const statusEl = document.getElementById("stream-status");
+            const titleEl = document.getElementById("stream-title");
+            const descriptionEl = document.getElementById("stream-description");
+            const viewerUrlEl = document.getElementById("viewer-url");
+            const hlsUrlEl = document.getElementById("hls-url");
+            const rtspUrlEl = document.getElementById("rtsp-url");
+            let hls = null;
+            let retryTimer = null;
+
+            if (config.title) {
+                titleEl.textContent = config.title;
+                document.title = config.title;
+            }
+
+            if (config.description) {
+                descriptionEl.textContent = config.description;
+            }
+
+            if (posterUrl) {
+                player.poster = posterUrl;
+            }
+
+            viewerUrlEl.textContent = window.location.href;
+            hlsUrlEl.textContent = hlsUrl || "HLS not configured.";
+            rtspUrlEl.textContent = rtspUrl || "RTSP not configured.";
+
+            function setStatus(message, isError) {
+                statusEl.textContent = message;
+                statusEl.classList.toggle("error", Boolean(isError));
+            }
+
+            function destroyPlayer() {
+                if (hls) {
+                    hls.destroy();
+                    hls = null;
+                }
+                player.removeAttribute("src");
+                player.load();
+            }
+
+            function scheduleRetry(message) {
+                if (retryTimer) {
+                    return;
+                }
+
+                setStatus(message || "Stream unavailable. Retrying in 5 seconds.", true);
+                retryTimer = window.setTimeout(function () {
+                    retryTimer = null;
+                    loadStream();
+                }, 5000);
+            }
+
+            function loadNativeStream(url) {
+                destroyPlayer();
+                player.src = url;
+                player.play().catch(function () {});
+                setStatus("Connected using native HLS playback.", false);
+            }
+
+            function loadStream() {
+                if (!hlsUrl) {
+                    setStatus("Set hlsUrl in stream-config.js or pass ?src=... to configure the feed.", true);
+                    return;
+                }
+
+                if (window.Hls && window.Hls.isSupported()) {
+                    destroyPlayer();
+                    hls = new window.Hls({
+                        lowLatencyMode: true,
+                        backBufferLength: 90
+                    });
+
+                    hls.loadSource(hlsUrl);
+                    hls.attachMedia(player);
+
+                    hls.on(window.Hls.Events.MANIFEST_PARSED, function () {
+                        player.play().catch(function () {});
+                        setStatus("Connected. Monitoring stream health.", false);
+                    });
+
+                    hls.on(window.Hls.Events.ERROR, function (_, data) {
+                        if (data && data.fatal) {
+                            scheduleRetry("Stream dropped. Retrying in 5 seconds.");
+                        }
+                    });
+
+                    return;
+                }
+
+                if (player.canPlayType("application/vnd.apple.mpegurl")) {
+                    loadNativeStream(hlsUrl);
+                    return;
+                }
+
+                setStatus("This browser cannot play HLS directly.", true);
+            }
+
+            player.addEventListener("error", function () {
+                scheduleRetry("Player error. Retrying in 5 seconds.");
+            });
+
+            player.addEventListener("stalled", function () {
+                scheduleRetry("Playback stalled. Retrying in 5 seconds.");
+            });
+
+            loadStream();
+        }());
+    </script>
+</body>
+
+</html>

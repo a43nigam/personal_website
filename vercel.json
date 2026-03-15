@@ -1,4 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "simple-web"
+  "outputDirectory": "simple-web",
+  "rewrites": [
+    {
+      "source": "/stream",
+      "destination": "/stream/index.html"
+    }
+  ]
 }

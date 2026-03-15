@@ -1,0 +1,151 @@
+.stream-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(239, 68, 68, 0.08), transparent 28%),
+    radial-gradient(circle at right 20%, rgba(251, 146, 60, 0.12), transparent 22%),
+    linear-gradient(180deg, #f9fafb 0%, #fffaf7 100%);
+}
+
+.stream-container {
+  max-width: 72rem;
+  padding-top: 4.5rem;
+}
+
+.stream-header {
+  margin-bottom: 2rem;
+}
+
+.stream-kicker {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #b91c1c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.stream-copy {
+  max-width: 48rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+.stream-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(19rem, 0.95fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.stream-stage,
+.stream-card {
+  border: 1px solid rgba(229, 231, 235, 0.92);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.07);
+  backdrop-filter: blur(14px);
+}
+
+.stream-stage {
+  padding: 1rem;
+}
+
+.stream-player-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #050505;
+}
+
+.stream-player-shell video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #050505;
+}
+
+.stream-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.75);
+  color: #f8fafc;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.stream-status {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.9rem;
+  background: #f8fafc;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.stream-status.error {
+  background: #fff1f2;
+  color: #b91c1c;
+}
+
+.stream-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.stream-card {
+  padding: 1.1rem;
+}
+
+.stream-card h2 {
+  margin-bottom: 0.55rem;
+}
+
+.stream-card p {
+  margin-bottom: 0.85rem;
+}
+
+.stream-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.stream-link:hover {
+  color: #dc2626;
+}
+
+.stream-code {
+  margin-top: 0.55rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.8rem;
+  background: #f8fafc;
+  color: #111827;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.stream-tip {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(229, 231, 235, 0.9);
+}
+
+@media (max-width: 900px) {
+  .stream-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .stream-container {
+    padding-top: 3rem;
+  }
+}
