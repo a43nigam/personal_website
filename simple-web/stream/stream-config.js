@@ -1,7 +1,1 @@
-window.STREAM_CONFIG = {
-  title: "Live Stream",
-  description: "Public viewer for the always-on stream. The player reconnects automatically when the feed drops.",
-  hlsUrl: "",
-  rtspUrl: "",
-  posterUrl: ""
-};
+window.STREAM_HLS_URL = "http://192.168.68.54:8888/fish/index.m3u8";
