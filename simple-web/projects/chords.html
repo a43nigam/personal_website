@@ -29,4 +29,80 @@ function next(){let q=state.qualities.length?state.qualities:BASIC,rs=state.root
 function progression(kind,tonic){let t=root(tonic),r=n=>trans(t,n).name;return kind==='ii-V-i minor'?[r(2)+'m7b5',r(7)+'7b9',t.name+'mMaj7']:kind==='I-vi-ii-V'?[t.name+'maj7',r(9)+'m7',r(2)+'m7',r(7)+'7']:kind==='iii-vi-ii-V-I'?[r(4)+'m7',r(9)+'m7',r(2)+'m7',r(7)+'7',t.name+'maj7']:kind==='Rhythm changes turnaround'?[t.name+'maj7',r(9)+'7',r(2)+'m7',r(7)+'7']:[r(2)+'m7',r(7)+'7',t.name+'maj7']}
 function settings(){let h='<div><label>Practice direction <select id="mode"><option value="tones">Chord → tones</option><option value="identify">Tones → identify chord</option><option value="interval">Interval drill</option><option value="guide">Guide tones</option><option value="circle">Circle of fourths</option><option value="sequence">Sequence / progression</option></select></label></div><div><label>Display <select id="display"><option value="alto">Alto written pitch</option><option value="concert">Concert pitch</option><option value="both">Both</option></select></label></div><div><label>New chord every <select id="timer"><option value="manual">manual</option><option>1</option><option>2</option><option>3</option><option>5</option><option>10</option></select></label></div><div><label>Auto reveal after <select id="auto"><option value="off">off</option><option>1</option><option>2</option><option>3</option><option>5</option></select></label></div><fieldset><legend>Roots</legend><button class="small" id="allRoots">ALL ROOTS</button>'+ROOTS.map(r=>'<label class="check"><input class="root" value="'+r+'" type="checkbox" checked>'+r+'</label>').join('')+'</fieldset><fieldset><legend>Chord categories</legend><button class="small" id="allQualities">SELECT ALL</button><button class="small" id="basic">BASIC JAZZ</button>'+Object.entries(CATEGORIES).map(([c,qs])=>'<details><summary>'+c+'</summary>'+qs.map(q=>'<label class="check"><input class="quality" value="'+q+'" type="checkbox" '+(BASIC.includes(q)?'checked':'')+'>'+q+'</label>').join('')+'</details>').join('')+'</fieldset><div><label>Circle quality <input id="circleQ" value="7"></label></div><div><label>Progression <select id="kind"><option>ii-V-I major</option><option>ii-V-i minor</option><option>I-vi-ii-V</option><option>iii-vi-ii-V-I</option><option>Rhythm changes turnaround</option></select></label><button class="small" id="generate">GENERATE</button></div>';let e=document.querySelector('#settings');e.innerHTML=h;for(let id of ['mode','display','timer','auto','circleQ','kind'])e.querySelector('#'+id).value=state[id==='circleQ'?'circleQ':id]||state.kind;e.onchange=()=>{state.mode=e.querySelector('#mode').value;state.display=e.querySelector('#display').value;state.timer=e.querySelector('#timer').value;state.auto=e.querySelector('#auto').value;state.circleQ=e.querySelector('#circleQ').value;state.kind=e.querySelector('#kind').value;state.roots=[...e.querySelectorAll('.root:checked')].map(x=>x.value);state.qualities=[...e.querySelectorAll('.quality:checked')].map(x=>x.value);state.revealed=false;render()};e.querySelector('#allRoots').onclick=()=>{e.querySelectorAll('.root').forEach(x=>x.checked=true);e.onchange()};e.querySelector('#allQualities').onclick=()=>{e.querySelectorAll('.quality').forEach(x=>x.checked=true);e.onchange()};e.querySelector('#basic').onclick=()=>{e.querySelectorAll('.quality').forEach(x=>x.checked=BASIC.includes(x.value));e.onchange()};e.querySelector('#generate').onclick=()=>{state.sequence=progression(e.querySelector('#kind').value,state.roots[0]||'C');state.sequenceI=0;state.current=state.sequence[0];state.revealed=false;render()}}
 function schedule(){clearTimeout(timerId);if(state.timer==='manual')return;if(state.auto!=='off')setTimeout(()=>{state.revealed=true;render()},+state.auto*1000);timerId=setTimeout(next,+state.timer*1000)}document.querySelector('#settingsButton').onclick=()=>{let e=document.querySelector('#settings');e.hidden=!e.hidden};document.querySelector('#reveal').onclick=()=>{state.revealed=true;setStats();render()};document.querySelector('#next').onclick=next;document.querySelector('#previous').onclick=previous;document.querySelector('#resetStats').onclick=()=>{stats={practiced:0,correct:0,attempts:0,total:0,roots:{},qualities:{}};localStorage.setItem('jazz-chord-stats',JSON.stringify(stats));render()};document.querySelector('#quiz').onsubmit=e=>{e.preventDefault();let answer=document.querySelector('#answerInput').value.trim(),c=chord(state.current),ok=false;if(state.mode==='interval')ok=answer.toLowerCase()===guide(c.tones)[0].n.toLowerCase();else try{ok=chord(answer).tones.map(t=>t.pc).join()==c.tones.map(t=>t.pc).join()}catch{}setStats(ok);state.revealed=true;document.querySelector('#answer').insertAdjacentHTML('afterbegin','<p>'+ (ok?'Correct.':'Not quite — the answer is '+c.symbol)+'</p>');render()};window.onkeydown=e=>{if(e.target.tagName==='INPUT')return;if(e.code==='Space'){e.preventDefault();state.revealed=!state.revealed;render()}if(e.key==='ArrowRight'||e.key==='Enter')next();if(e.key==='ArrowLeft')previous();if(e.key.toLowerCase()==='r'){state.revealed=false;render()}if(e.key.toLowerCase()==='s'){state.mode=state.mode==='sequence'?'tones':'sequence';render()}};settings();render();
-</script></body></html>
+</script>
+<script>
+// Keyboard controls are registered in the capture phase so they still work
+// while an answer box has focus. Printable answer characters are left alone.
+(() => {
+  const quiz = () => document.querySelector('#quiz');
+  const input = () => document.querySelector('#answerInput');
+  const isEditing = target => target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target.isContentEditable;
+  const reveal = () => { state.revealed = !state.revealed; render(); };
+  const move = direction => {
+    // Do not carry an answer over when keyboard navigation changes the question.
+    if (input()) input().value = '';
+    direction();
+    if (!quiz().hidden) input().focus();
+  };
+  const submitOrAdvance = () => {
+    if (!quiz().hidden) {
+      // An empty answer means “show me”; a nonempty one is checked normally.
+      if (input().value.trim()) quiz().requestSubmit();
+      else { state.revealed = true; render(); }
+    } else next();
+  };
+  const cycleMode = () => {
+    const modes = ['tones', 'identify', 'interval', 'guide', 'circle', 'sequence'];
+    state.mode = modes[(modes.indexOf(state.mode) + 1) % modes.length];
+    state.revealed = false;
+    if (input()) input().value = '';
+    const modeSelect = document.querySelector('#mode');
+    if (modeSelect) modeSelect.value = state.mode;
+    render();
+  };
+  const toggleSettings = () => document.querySelector('#settingsButton').click();
+
+  document.addEventListener('keydown', event => {
+    if (event.defaultPrevented || event.isComposing || event.altKey || event.ctrlKey || event.metaKey) return;
+    const editing = isEditing(event.target);
+    const key = event.key.toLowerCase();
+    let action;
+
+    // Retire the former top-row R shortcut; all trainer shortcuts now live
+    // on the bottom two letter rows (plus navigation/space/return).
+    if (!editing && key === 'r') {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+
+    // These non-text controls intentionally work even when an answer input is active.
+    if (event.key === 'ArrowLeft') action = () => move(previous);
+    else if (event.key === 'ArrowRight') action = () => move(next);
+    else if (event.key === 'ArrowUp' || event.code === 'Space') action = reveal;
+    else if (event.key === 'ArrowDown') action = toggleSettings;
+    else if (event.key === 'Enter') action = submitOrAdvance;
+    // Letters are shortcuts only outside an editor, preserving answers such as C# and C/E.
+    else if (!editing && ['z', 'a', ','].includes(key)) action = () => move(previous);
+    else if (!editing && ['x', 's'].includes(key)) action = reveal;
+    else if (!editing && ['c', 'd', '.'].includes(key)) action = () => move(next);
+    else if (!editing && key === 'v') action = cycleMode;
+    else if (!editing && (key === '/' || key === 'b')) action = toggleSettings;
+
+    if (action) {
+      event.preventDefault();
+      event.stopPropagation();
+      action();
+    }
+  }, true);
+
+  document.querySelector('aside').insertAdjacentHTML('beforeend',
+    '<span class="keyboard-hint">Keys: ←/Z previous · Space/X answer · →/C next · V drill · / settings</span>');
+  document.head.insertAdjacentHTML('beforeend',
+    '<style>.keyboard-hint{margin-left:auto;font-size:.72rem;color:#777}kbd{font:inherit;border:1px solid #ccc;border-radius:3px;padding:0 .22em}@media(max-width:600px){.keyboard-hint{width:100%;margin-left:0}}</style>');
+  document.querySelector('#previous').title = 'Previous (← or Z)';
+  document.querySelector('#reveal').title = 'Show or hide answer (Space or X)';
+  document.querySelector('#next').title = 'Next chord (→ or C)';
+})();
+</script>
+</body></html>
